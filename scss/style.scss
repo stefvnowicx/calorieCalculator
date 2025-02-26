@@ -117,7 +117,7 @@ body {
       color: transparent;
    }
    &__text {
-       font-size: 2.4rem;
+      font-size: 1.8rem;
       width: 500px;
       text-align: center;
       margin-bottom: 2em;
@@ -151,6 +151,98 @@ body {
          color: black;
          box-shadow: none;
          transform: translateY(4px);
+      }
+      img {
+         width: 150px;
+         height: 150px;
+      }
+   }
+   .gender-btn {
+      margin: 2em;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      &:nth-of-type(odd) {
+         &:hover {
+            border: 2px solid #0e548a;
+            box-shadow: 5px 5px 0px #0e548a;
+         }
+         &:active {
+            color: black;
+            box-shadow: none;
+            transform: translateY(4px);
+         }
+      }
+   }
+   &__input {
+      width: 150px;
+      font-size: 2.2rem;
+      padding: 1em;
+      color: #fff;
+      background-color: transparent;
+      border-radius: 6px;
+      border: 2px solid #e81cff72;
+      margin: 1em;
+      transition: border 0.3s;
+      &:focus {
+         outline: none;
+         border: 2px solid #0e548a;
+      }
+   }
+   &__label {
+      font-size: 2.4rem;
+   }
+   &__box {
+      margin-bottom: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn-box {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         margin: 0.5em;
+         width: 200px;
+         height: 200px;
+         font-size: 2rem;
+         color: #40c9ff;
+         &:nth-of-type(odd) {
+            color: #e81cff;
+         }
+         .activity-btn {
+            margin: 2em;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            &--even {
+               &:hover {
+                  border: 2px solid #0e548a;
+                  box-shadow: 5px 5px 0px #0e548a;
+               }
+               &:active {
+                  color: black;
+                  box-shadow: none;
+                  transform: translateY(4px);
+               }
+            }
+         }
+      }
+   }
+   &__results{
+      margin-bottom: 1.5em;
+   }
+   &__result {
+      color: #fad1ff;
+      text-align: center;
+      padding: 0.5em;
+      font-size: 1.7rem;
+      span{
+         color: #d4f3ff;
+      }
+      .bold{
+         font-weight: bold;
+         font-size: 2rem;
       }
    }
 }

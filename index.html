@@ -12,27 +12,133 @@
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body>
-
-    <div class="background"></div>
+      <div class="background"></div>
 
       <h1 class="h1">Calorie Calculator</h1>
       <!-- calculator -->
       <div class="calculator">
-         <!-- first page -->
+         <!-- first page  -- welcome page -->
          <div class="page">
             <div class="page-background"></div>
             <h2 class="page__heading">Welcome to Calorie Calculator</h2>
             <p class="page__text">This tool helps you estimate your daily calorie needs based on your personal data. Enter your details to get started!</p>
             <button class="page__btn">calculate !</button>
          </div>
-         <!-- second page -->
+
+         <!-- second page -- gender page -->
          <div class="page">
-            <h2 class="page__heading">Lorem ipsum dolor sit amet.</h2>
-            <p class="page__text">Lorem ipsum dolor sit amet.</p>
-            <button class="page__btn">Lorem ipsum dolor sit amet.</button>
+            <h2 class="page__heading">What gender are you?</h2>
+            <div class="page__box">
+               <button class="page__btn gender-btn" data-value="male">
+                  <img src="./img/boy.svg" alt="">
+               </button>
+               <button class="page__btn gender-btn" data-value="female">
+                  <img src="./img/girl(1).svg" alt="">
+               </button>
+            </div>
+         </div>
+
+         <!-- third page -- age page-->
+         <div class="page">
+            <h2 class="page__heading">What is your age?</h2>
+            <div class="page__box"><input type="number" class="page__input" id="age" placeholder="20" /><label class="page__label" for="age">years</label></div>
+            <button class="page__btn">next</button>
+         </div>
+
+         <!-- fourth page -- weight page -->
+         <div class="page">
+            <h2 class="page__heading">What is your weight?</h2>
+            <div class="page__box"><input type="number" class="page__input" id="weight" placeholder="75" /><label class="page__label" for="weight">kg</label></div>
+            <button class="page__btn">next</button>
+         </div>
+
+         <!-- fifth page -- height page-->
+         <div class="page">
+            <h2 class="page__heading">What is your height?</h2>
+            <div class="page__box"><input type="number" class="page__input" id="height" placeholder="175" /><label class="page__label" for="height">cm</label></div>
+            <button class="page__btn">next</button>
+         </div>
+
+         <!-- sixth page --activity page-->
+         <div class="page">
+            <h2 class="page__heading">What active are you?</h2>
+            <div class="page__box">
+               <div class="btn-box">
+                  <button class="page__btn activity-btn">
+                     <img src="./img/undraw_relaxation_ies6.svg" alt="" />
+                  </button>
+                  <p>Not active</p>
+               </div>
+               <div class="btn-box">
+                  <button class="page__btn activity-btn activity-btn--even">
+                     <img src="./img/undraw_hiking_9zta.svg" alt="" />
+                  </button>
+                  <p>Lightly</p>
+               </div>
+               <div class="btn-box">
+                  <button class="page__btn activity-btn">
+                     <img src="./img/undraw_yoga_i399.svg" alt="" />
+                  </button>
+                  <p>Moderately</p>
+               </div>
+               <div class="btn-box">
+                  <button class="page__btn activity-btn activity-btn--even">
+                     <img src="./img/undraw_athletes-training_koqa.svg" alt="" />
+                  </button>
+                  <p>Very</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- seventh page -- goal page -->
+         <div class="page">
+            <h2 class="page__heading">What is your caloric goal?</h2>
+            <div class="page__box">
+               <div class="btn-box">
+                  <button class="page__btn activity-btn">
+                     <img src="./img/undraw_athletes-training_koqa.svg" alt="" />
+                  </button>
+                  <p>To lose weight</p>
+               </div>
+               <div class="btn-box">
+                  <button class="page__btn activity-btn activity-btn--even">
+                     <img src="./img/undraw_writing-down-ideas_h99r.svg" alt="" />
+                  </button>
+                  <p>To stay in my weight</p>
+               </div>
+               <div class="btn-box">
+                  <button class="page__btn activity-btn">
+                     <img src="./img/undraw_personal-trainer_bqkg.svg" alt="" />
+                  </button>
+                  <p>To gain weight</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- eight page -- pre-final page -->
+         <div class="page">
+            <h2 class="page__heading">We got everything we need!</h2>
+            <p class="page__text">Now we have all the necessary data. Let's calculate your daily calorie needs and macronutrient breakdown!</p>
+            <button class="page__btn">calculate!</button>
+         </div>
+
+         <!-- ninth page -- final page -->
+         <div class="page">
+            <h2 class="page__heading">Your Personalized Nutrition Plan</h2>
+            <p class="page__text">Here are your daily nutritional needs based on your input:</p>
+
+            <div class="page__results">
+               <p class="page__result"><span class="bold">Calories</span>: <span id="calories">0</span> kcal</p>
+               <p class="page__result"><span class="bold">Protein</span>: <span id="Protein">0</span> g</p>
+               <p class="page__result"><span class="bold">Fat</span>: <span id="fat">0</span> g</p>
+               <p class="page__result"><span class="bold">Carbohydrates</span>: <span id="carbohydrates">0</span> g</p>
+            </div>
+
+            <button class="page__btn restart-btn">Recalculate</button>
          </div>
       </div>
 
+      <!-- progress bar -->
       <div class="progress-bar">
          <div class="progress-bar__line"></div>
 
