@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calorieCalculator</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-    <script src="./script.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>calorieCalculator</title>
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet" />
+      <!-- scss -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+
+    <div class="background"></div>
+
+      <h1 class="h1">Calorie Calculator</h1>
+      <!-- calculator -->
+      <div class="calculator">
+         <!-- first page -->
+         <div class="page">
+            <div class="page-background"></div>
+            <h2 class="page__heading">Welcome to Calorie Calculator</h2>
+            <p class="page__text">This tool helps you estimate your daily calorie needs based on your personal data. Enter your details to get started!</p>
+            <button class="page__btn">calculate !</button>
+         </div>
+         <!-- second page -->
+         <div class="page">
+            <h2 class="page__heading">Lorem ipsum dolor sit amet.</h2>
+            <p class="page__text">Lorem ipsum dolor sit amet.</p>
+            <button class="page__btn">Lorem ipsum dolor sit amet.</button>
+         </div>
+      </div>
+
+      <div class="progress-bar">
+         <div class="progress-bar__line"></div>
+
+         <div class="progress-bar__circle active-circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+         <div class="progress-bar__circle"></div>
+      </div>
+
+      <script src="./script.js"></script>
+   </body>
 </html>

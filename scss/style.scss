@@ -14,4 +14,143 @@ html {
 body {
    font-family: sans-serif;
    font-size: 1.6rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #494949;
+   color: #fff;
+   min-height: 100vh;
+}
+
+.background {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url("../img/patternpad-2025-02-26-17-06-05.svg");
+   z-index: -100;
+   filter: brightness(0.05);
+}
+
+// h1
+.h1 {
+   font-family: "Sansita Swashed";
+   font-size: 5rem;
+   letter-spacing: 3px;
+   font-weight: 900;
+   background-image: linear-gradient(145deg, #e81cff, #40c9ff);
+   background-clip: unset;
+   -webkit-background-clip: text;
+   color: transparent;
+   text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.3);
+}
+
+.progress-bar {
+   position: relative;
+   width: 900px;
+   height: 5px;
+   border-radius: 3px;
+   background-color: #212121;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: -5;
+   &__circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #212121;
+   }
+   //    dynamicznie w js zmieniac % width
+   &__line {
+      position: absolute;
+      width: 30px;
+      left: 0;
+      top: 0;
+      height: 100%;
+      border-radius: 3px;
+      z-index: 1;
+      background-color: rgb(232, 28, 255);
+      transition: width 0.4s;
+      z-index: 5;
+   }
+   //    dynamiczne w js dodajemy
+   .active-circle {
+      background-color: rgb(232, 28, 255);
+      z-index: 10;
+   }
+}
+
+// -----calculator
+.calculator {
+   width: 900px;
+   height: 500px;
+   background-color: #ababab;
+   margin: 2em;
+   margin-bottom: 5em;
+   background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+   border: 2px solid transparent;
+   border-radius: 6px;
+   overflow: hidden;
+}
+
+.page {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   border-radius: 6px;
+   padding: 2em;
+   transition: transform 0.4s;
+   z-index: 100;
+   &__heading {
+      font-size: 4rem;
+      margin-bottom: 1em;
+      background-image: linear-gradient(145deg, #e81cff, #40c9ff);
+      background-clip: unset;
+      -webkit-background-clip: text;
+      color: transparent;
+   }
+   &__text {
+       font-size: 2.4rem;
+      width: 500px;
+      text-align: center;
+      margin-bottom: 2em;
+      background-image: linear-gradient(145deg, #e81cff, #40c9ff);
+      background-clip: unset;
+      -webkit-background-clip: text;
+      color: transparent;
+   }
+   &__btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #e81cff72;
+      border: 2px solid #000;
+      border-radius: 10px;
+      box-shadow: 5px 5px 0px #000;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+         background-color: #ffffff;
+         color: #b112c372;
+         border: 2px solid #e81cff72;
+         box-shadow: 5px 5px 0px #e81cff72;
+      }
+      &:active {
+         background-color: #e81cff72;
+         color: black;
+         box-shadow: none;
+         transform: translateY(4px);
+      }
+   }
 }
