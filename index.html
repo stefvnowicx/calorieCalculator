@@ -42,21 +42,21 @@
          <div class="page">
             <h2 class="page__heading">What is your age?</h2>
             <div class="page__box"><input type="number" class="page__input" id="age" placeholder="20" /><label class="page__label" for="age">years</label></div>
-            <button class="page__btn">next</button>
+            <button class="page__btn" data-value="input-value">next</button>
          </div>
 
          <!-- fourth page -- weight page -->
          <div class="page">
             <h2 class="page__heading">What is your weight?</h2>
             <div class="page__box"><input type="number" class="page__input" id="weight" placeholder="75" /><label class="page__label" for="weight">kg</label></div>
-            <button class="page__btn">next</button>
+            <button class="page__btn" data-value="input-value">next</button>
          </div>
 
          <!-- fifth page -- height page-->
          <div class="page">
             <h2 class="page__heading">What is your height?</h2>
             <div class="page__box"><input type="number" class="page__input" id="height" placeholder="175" /><label class="page__label" for="height">cm</label></div>
-            <button class="page__btn">next</button>
+            <button class="page__btn" data-value="input-value">next</button>
          </div>
 
          <!-- sixth page --activity page-->
@@ -64,25 +64,25 @@
             <h2 class="page__heading">What active are you?</h2>
             <div class="page__box">
                <div class="btn-box">
-                  <button class="page__btn activity-btn">
+                  <button class="page__btn activity-btn" data-value="not">
                      <img src="./img/undraw_relaxation_ies6.svg" alt="" />
                   </button>
                   <p>Not active</p>
                </div>
                <div class="btn-box">
-                  <button class="page__btn activity-btn activity-btn--even">
+                  <button class="page__btn activity-btn activity-btn--even" data-value="lightly">
                      <img src="./img/undraw_hiking_9zta.svg" alt="" />
                   </button>
                   <p>Lightly</p>
                </div>
                <div class="btn-box">
-                  <button class="page__btn activity-btn">
+                  <button class="page__btn activity-btn" data-value="moderately">
                      <img src="./img/undraw_yoga_i399.svg" alt="" />
                   </button>
                   <p>Moderately</p>
                </div>
                <div class="btn-box">
-                  <button class="page__btn activity-btn activity-btn--even">
+                  <button class="page__btn activity-btn activity-btn--even" data-value="very">
                      <img src="./img/undraw_athletes-training_koqa.svg" alt="" />
                   </button>
                   <p>Very</p>
@@ -95,19 +95,19 @@
             <h2 class="page__heading">What is your caloric goal?</h2>
             <div class="page__box">
                <div class="btn-box">
-                  <button class="page__btn activity-btn">
+                  <button class="page__btn activity-btn" data-value="diet">
                      <img src="./img/undraw_athletes-training_koqa.svg" alt="" />
                   </button>
                   <p>To lose weight</p>
                </div>
                <div class="btn-box">
-                  <button class="page__btn activity-btn activity-btn--even">
+                  <button class="page__btn activity-btn activity-btn--even" data-value="zero">
                      <img src="./img/undraw_writing-down-ideas_h99r.svg" alt="" />
                   </button>
                   <p>To stay in my weight</p>
                </div>
                <div class="btn-box">
-                  <button class="page__btn activity-btn">
+                  <button class="page__btn activity-btn" data-value="bulk">
                      <img src="./img/undraw_personal-trainer_bqkg.svg" alt="" />
                   </button>
                   <p>To gain weight</p>
@@ -119,7 +119,7 @@
          <div class="page">
             <h2 class="page__heading">We got everything we need!</h2>
             <p class="page__text">Now we have all the necessary data. Let's calculate your daily calorie needs and macronutrient breakdown!</p>
-            <button class="page__btn">calculate!</button>
+            <button class="page__btn" data-value="calculate">calculate!</button>
          </div>
 
          <!-- ninth page -- final page -->
@@ -129,12 +129,12 @@
 
             <div class="page__results">
                <p class="page__result"><span class="bold">Calories</span>: <span id="calories">0</span> kcal</p>
-               <p class="page__result"><span class="bold">Protein</span>: <span id="Protein">0</span> g</p>
+               <p class="page__result"><span class="bold">Protein</span>: <span id="protein">0</span> g</p>
                <p class="page__result"><span class="bold">Fat</span>: <span id="fat">0</span> g</p>
                <p class="page__result"><span class="bold">Carbohydrates</span>: <span id="carbohydrates">0</span> g</p>
             </div>
 
-            <button class="page__btn restart-btn">Recalculate</button>
+            <button class="page__btn" data-value="restart">Recalculate</button>
          </div>
       </div>
 

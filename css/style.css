@@ -39,7 +39,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/patternpad-2025-02-26-17-06-05.svg");
+  background-image: url("../img/patternpad-2025-02-27-15-24-34.svg");
   z-index: -100;
   -webkit-filter: brightness(0.05);
           filter: brightness(0.05);
@@ -50,7 +50,7 @@ body {
   font-size: 5rem;
   letter-spacing: 3px;
   font-weight: 900;
-  background-image: linear-gradient(145deg, #e81cff, #40c9ff);
+  background-image: linear-gradient(145deg, #c7f9cc, #57cc99);
   background-clip: unset;
   -webkit-background-clip: text;
   color: transparent;
@@ -88,13 +88,13 @@ body {
   height: 100%;
   border-radius: 3px;
   z-index: 1;
-  background-color: rgb(232, 28, 255);
+  background-color: #c7f9cc;
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
   z-index: 5;
 }
 .progress-bar .active-circle {
-  background-color: rgb(232, 28, 255);
+  background-color: #c7f9cc;
   z-index: 10;
 }
 
@@ -104,7 +104,7 @@ body {
   background-color: #ababab;
   margin: 2em;
   margin-bottom: 5em;
-  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #c7f9cc, #80ed99) border-box;
   border: 2px solid transparent;
   border-radius: 6px;
   overflow: hidden;
@@ -138,7 +138,7 @@ body {
 .page__heading {
   font-size: 4rem;
   margin-bottom: 1em;
-  background-image: linear-gradient(145deg, #e81cff, #40c9ff);
+  background-image: linear-gradient(145deg, #c7f9cc, #80ed99);
   background-clip: unset;
   -webkit-background-clip: text;
   color: transparent;
@@ -148,7 +148,7 @@ body {
   width: 500px;
   text-align: center;
   margin-bottom: 2em;
-  background-image: linear-gradient(145deg, #e81cff, #40c9ff);
+  background-image: linear-gradient(145deg, #c7f9cc, #80ed99);
   background-clip: unset;
   -webkit-background-clip: text;
   color: transparent;
@@ -160,8 +160,8 @@ body {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background-color: rgba(232, 28, 255, 0.4470588235);
+  color: #000;
+  background-color: #c7f9cc;
   border: 2px solid #000;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 0px #000;
@@ -172,13 +172,13 @@ body {
 }
 .page__btn:hover {
   background-color: #ffffff;
-  color: rgba(177, 18, 195, 0.4470588235);
-  border: 2px solid rgba(232, 28, 255, 0.4470588235);
-  -webkit-box-shadow: 5px 5px 0px rgba(232, 28, 255, 0.4470588235);
-          box-shadow: 5px 5px 0px rgba(232, 28, 255, 0.4470588235);
+  color: #57cc99;
+  border: 2px solid #c7f9cc;
+  -webkit-box-shadow: 5px 5px 0px #c7f9cc;
+          box-shadow: 5px 5px 0px #c7f9cc;
 }
 .page__btn:active {
-  background-color: rgba(232, 28, 255, 0.4470588235);
+  background-color: #c7f9cc;
   color: black;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -212,6 +212,11 @@ body {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
 }
+.page .gender-btn:nth-of-type(even):hover {
+  border: 2px solid #e81cff;
+  -webkit-box-shadow: 5px 5px 0px #e81cff;
+          box-shadow: 5px 5px 0px #e81cff;
+}
 .page__input {
   width: 150px;
   font-size: 2.2rem;
@@ -219,7 +224,7 @@ body {
   color: #fff;
   background-color: transparent;
   border-radius: 6px;
-  border: 2px solid rgba(232, 28, 255, 0.4470588235);
+  border: 2px solid #57cc99;
   margin: 1em;
   -webkit-transition: border 0.3s;
   transition: border 0.3s;
@@ -261,10 +266,10 @@ body {
   width: 200px;
   height: 200px;
   font-size: 2rem;
-  color: #40c9ff;
+  color: #2ea5ff;
 }
 .page__box .btn-box:nth-of-type(odd) {
-  color: #e81cff;
+  color: #57cc99;
 }
 .page__box .btn-box .activity-btn {
   margin: 2em;
