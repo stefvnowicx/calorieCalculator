@@ -8,6 +8,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <!-- scss -->
       <link rel="stylesheet" href="./css/style.css" />
    </head>
@@ -30,10 +31,10 @@
             <h2 class="page__heading">What gender are you?</h2>
             <div class="page__box">
                <button class="page__btn gender-btn" data-value="male">
-                  <img src="./img/boy.svg" alt="">
+                  <img src="./img/boy.svg" alt="" />
                </button>
                <button class="page__btn gender-btn" data-value="female">
-                  <img src="./img/girl(1).svg" alt="">
+                  <img src="./img/girl(1).svg" alt="" />
                </button>
             </div>
          </div>
@@ -43,6 +44,7 @@
             <h2 class="page__heading">What is your age?</h2>
             <div class="page__box"><input type="number" class="page__input" id="age" placeholder="20" /><label class="page__label" for="age">years</label></div>
             <button class="page__btn" data-value="input-value">next</button>
+            <p class="page__error">Please enter a valid age!</p>
          </div>
 
          <!-- fourth page -- weight page -->
@@ -50,6 +52,7 @@
             <h2 class="page__heading">What is your weight?</h2>
             <div class="page__box"><input type="number" class="page__input" id="weight" placeholder="75" /><label class="page__label" for="weight">kg</label></div>
             <button class="page__btn" data-value="input-value">next</button>
+            <p class="page__error">Please enter a valid weight!</p>
          </div>
 
          <!-- fifth page -- height page-->
@@ -57,6 +60,7 @@
             <h2 class="page__heading">What is your height?</h2>
             <div class="page__box"><input type="number" class="page__input" id="height" placeholder="175" /><label class="page__label" for="height">cm</label></div>
             <button class="page__btn" data-value="input-value">next</button>
+            <p class="page__error">Please enter a valid height!</p>
          </div>
 
          <!-- sixth page --activity page-->
@@ -128,10 +132,18 @@
             <p class="page__text">Here are your daily nutritional needs based on your input:</p>
 
             <div class="page__results">
-               <p class="page__result"><span class="bold">Calories</span>: <span id="calories">0</span> kcal</p>
-               <p class="page__result"><span class="bold">Protein</span>: <span id="protein">0</span> g</p>
-               <p class="page__result"><span class="bold">Fat</span>: <span id="fat">0</span> g</p>
-               <p class="page__result"><span class="bold">Carbohydrates</span>: <span id="carbohydrates">0</span> g</p>
+               <div class="page__results-box">
+                  <p class="page__result"><span class="bold">Calories</span>: <span id="calories">0</span> kcal</p>
+                  <p class="page__result"><span class="bold protein">Protein</span>: <span id="protein">0</span> g</p>
+                  <p class="page__result"><span class="bold fat">Fat</span>: <span id="fat">0</span> g</p>
+                  <p class="page__result"><span class="bold carbs">Carbohydrates</span>: <span id="carbohydrates">0</span> g</p>
+               </div>
+               <div class="page__results-box">
+                  <div class="chart-container">
+                     <canvas id="nutritionChart"></canvas>
+                     <p class="chart-info">The chart shows the number of calories provided by each macronutrient: protein (4 kcal per 1 g), fat (9 kcal per 1 g), and carbohydrates (4 kcal per 1 g).</p>
+                  </div>
+               </div>
             </div>
 
             <button class="page__btn" data-value="restart">Recalculate</button>
